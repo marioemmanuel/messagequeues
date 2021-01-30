@@ -34,6 +34,6 @@ This repository is just a basic example and it lacks certain functionality:
 
 Additionally Andrew from #FreeBSD at Freenode correctly pointed out some issues:
 - There is no need to open one queue per client in the bus process, as `mtype` value could be used to identify destination client. Hence all clients and bus would share the same queue. The bus would send as many messages as clients are using `mtype` as destination.
-- ftok takes only the 8 least significant bits from `proj_id` to generate the queue key, in the current implementation it would not be that unlikely to get collisions on the lowest byte of the PID, as PIDs are used as `proj_id`.
+- `ftok` takes only the 8 least significant bits from `proj_id` to generate the queue key, in the current implementation it would not be that unlikely to get collisions on the lowest byte of the PID, as PIDs are used as `proj_id`.
 - There is at least one bug in the FreeBSD kernel which deals `key_t` as `int` instead of as `long`. Apparently that is affecting `ipcs` but not code written in C.
 
