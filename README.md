@@ -11,9 +11,9 @@ It is not intended as a ready to use library but as a basic example on how to us
 Requieres Motif and X11 development libraries.
 
 ```
-# touch /etc/xchart
-make xbus
-make xclient
+# touch /etc/xbus
+$ make xbus
+$ make xclient
 ```
 
 ### Usage
