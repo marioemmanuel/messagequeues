@@ -27,10 +27,10 @@ Below image shows one bus and four clients launched. Notice how the fourth clien
 
 ### Caveats
 
-This repository is just a basic example it lacks certain functionality:
-- Deregistration.
-- Timeouts.
-- Termination of queues.
+This repository is just a basic example and it lacks certain functionality:
+- Deregistration of clients.
+- Timeouts/Keepalive messages.
+- Proper termination of queues.
 
 Additionally Andrew from #FreeBSD at Freenode correctly pointed out some issues:
 - There is no need to open one queue per client in the bus process, as `mtype` value could be used to identify destination client. Hence all clients and bus would share the same queue. The bus would send as many messages as clients are using `mtype` as destination.
