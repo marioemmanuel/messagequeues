@@ -2,7 +2,6 @@
  * client.c
  *
  * WRITTEN BY:		M.EMMANUEL
- * WRITTEN FOR:		AD USUM PROPIUM
  * DATE:		29/01/2021
  * REV:			1
  *
