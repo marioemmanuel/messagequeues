@@ -2,7 +2,6 @@
  * bus.c
  *
  * WRITTEN BY:		M.EMMANUEL
- * WRITTEN FOR:		AD USUM PROPIUM
  * DATE:		26/01/2021
  * REV:			1
  *
