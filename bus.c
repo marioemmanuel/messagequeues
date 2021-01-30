@@ -68,7 +68,7 @@ void *listenQueue(void *arg) {
 	char		textLineBuffer[1000];
 
 	/* GET QUEUE_KEY */
-	queue_key = ftok("/etc/xchart", 1);
+	queue_key = ftok("/etc/xbus", 1);
 	sprintf(textLineBuffer, "Queue key retrieved %ld\n", queue_key);
 	displayMessage(textLineBuffer);
 
