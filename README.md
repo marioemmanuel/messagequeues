@@ -1,4 +1,5 @@
-# messagequeues
+# messagequeues 
+## System V IPC Queues X11 Motif Example
 
 ### Introduction
 
@@ -8,7 +9,7 @@ It is not intended as a ready to use library but as a basic example on how to us
 
 ### Compilation
 
-Requieres Motif and X11 development libraries.
+Requieres Motif and X11 development libraries. File /etc/xbus is used for `ftok`
 
 ```
 # touch /etc/xbus
@@ -21,4 +22,5 @@ $ make xclient
 Clients allow registering against the bus and sending messages.
 Bus reads client register requests and distributes to all registered clients the messages.
 
+![Screenshot](/messagequeues_screenshot.png?raw=true "Screenshot")
 
