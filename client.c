@@ -80,13 +80,13 @@ void *listenQueue(void *arg) {
 	char 		textLineBuffer[1000];
 
 	/* GET BUS QUEUE_KEY */
-	bus_queue_key = ftok("/etc/xchart", 1);
+	bus_queue_key = ftok("/etc/xbus", 1);
 	bus_queue_id = msgget(bus_queue_key, 0);
 	sprintf(textLineBuffer, "Bus Handler Queue key retrieved %ld.\n", bus_queue_key);
 	displayMessage(textLineBuffer); 
 
 	/* GET CLIENT QUEUE_KEY */
-	client_queue_key = ftok("/etc/xchart", getpid());
+	client_queue_key = ftok("/etc/xbus", getpid());
 	client_queue_id = msgget(client_queue_key, IPC_CREAT|0666);
 	sprintf(textLineBuffer, "Client Queue key retrieved %ld.\n", client_queue_key);
 	displayMessage(textLineBuffer); 
