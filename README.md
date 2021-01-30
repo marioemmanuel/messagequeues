@@ -1,5 +1,5 @@
 # messagequeues 
-## System V IPC Queues X11 Motif Example
+## System V IPC Queues X11/Motif Example
 
 ### Introduction
 
